@@ -945,10 +945,10 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/tomkarokna.pl\/wp-admin\/
             .then(response => response.json())
             .then(result => {
                 if (result.ok) {
-                    alert('Заявка успешно отправлена!');
+
                     form.reset(); 
                 } else {
-                    alert('Ошибка отправки. Попробуйте позже.');
+                    // alert('Ошибка отправки. Попробуйте позже.');
                     console.error('Telegram Error:', result);
                 }
             })
